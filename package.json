@@ -1,0 +1,32 @@
+{
+  "name": "sketch2html",
+  "description": "将sketch设计图直接导出为HTML+CSS",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "sketch2html",
+    "manifest": "src/manifest.json",
+    "main": "sketch2html.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  },
+  "author": "Junhong Zhu <a1712762@student.adelaide.edu.au>",
+  "dependencies": {
+    "@skpm/fs": "^0.2.6",
+    "@skpm/path": "^0.1.4",
+    "sketch-module-web-view": "^3.4.3"
+  }
+}

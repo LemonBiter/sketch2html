@@ -1,0 +1,36 @@
+{
+  "name": "sketch2html",
+  "description": "将sketch设计图导出为HTML+CSS",
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "plugin.png",
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "一键生成",
+      "script": "./commands/auto-generator/one-button-generation.js",
+      "shortcut": "cmd shift w",
+      "identifier": "sketch2html.autoGenerator",
+      "description": "将碎片功能整合起来",
+      "handler": "oneButtonGeneration"
+    },
+    {
+      "name": "导出选中图片(不选导出全部)",
+      "identifier": "sketch2html.imgExport",
+      "script": "./commands/img-export/img-export.js",
+      "handler": "imgExporter"
+    },
+    {
+      "name": "HTML生成",
+      "identifier": "sketch2html.htmlGeneration",
+      "description": "根据图片生成HTML格式文件",
+      "script": "./commands/html-generation/html-generator.js",
+      "handler": "htmlGen"
+    }
+  ],
+  "menu": {
+    "title": "sketch2html",
+    "items": [
+      "sketch2html.autoGenerator","sketch2html.imgExport","sketch2html.htmlGeneration"
+    ]
+  }
+}
