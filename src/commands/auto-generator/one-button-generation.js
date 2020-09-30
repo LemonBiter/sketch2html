@@ -8,24 +8,7 @@ import {elementClassify} from "../../common-function";
 export function oneButtonGeneration(){
     const selectedLayer = (document.selectedLayers.layers)[0];
 
-
-
-
     let singleStyleObj = elementClassify(selectedLayer);
 
-
-
-
-
-
-
-
-
-
-
-
-
     htmlGen(singleStyleObj);
-
-
 }

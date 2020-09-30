@@ -1,6 +1,6 @@
-import {sketch, document, page, artboard, groupElements,selectedLayer} from "../../../commonAPI";
-import fs from "@skpm/fs";
-import {camelToDash,changeCoordinatesBasis} from "../../../common-function";
+import {selectedLayer} from "../../../commonAPI";
+
+import {changeCoordinatesBasis} from "../../../common-function";
 
 export function pTagGen(content) {
     const text = content.text;

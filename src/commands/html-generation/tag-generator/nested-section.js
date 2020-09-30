@@ -14,7 +14,7 @@ export function nestedSectionGen(singleStyle, htmlDoc) {
             return n2 - n1;
         })
 
-    let nestedResult = '';
+
     let i = 0;
     while (i < nestedArray.length) {
         htmlDoc = deepSectionGen(singleStyle,nestedArray[i], htmlDoc);
@@ -28,7 +28,6 @@ export function nestedSectionGen(singleStyle, htmlDoc) {
 function deepSectionGen(singleStyle,layer, innerHtml) {
 
     let position = changeCoordinatesBasis(singleStyle,layer);
-
 
     const border = getBorder(layer);
     const background = getBackground(layer);

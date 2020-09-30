@@ -6,6 +6,13 @@
   "bundleVersion": 1,
   "commands": [
     {
+      "name": "导出标题",
+      "script": "./commands/title-export/title-export-entry.js",
+      "identifier": "sketch2html.titleExport",
+      "description": "将sketch标题样式导出成代码",
+      "handler": "titleExport"
+    },
+    {
       "name": "一键生成",
       "script": "./commands/auto-generator/one-button-generation.js",
       "shortcut": "cmd shift w",
@@ -30,7 +37,7 @@
   "menu": {
     "title": "sketch2html",
     "items": [
-      "sketch2html.autoGenerator","sketch2html.imgExport","sketch2html.htmlGeneration"
+      "sketch2html.titleExport","sketch2html.autoGenerator","sketch2html.imgExport","sketch2html.htmlGeneration"
     ]
   }
 }
