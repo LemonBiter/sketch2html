@@ -15,6 +15,6 @@ export default function(selectedLayerObj){
 
     htmlDoc = bodyWrap(htmlDoc);
 
-    fs.writeFileSync("/Users/junhongzhu/work/material-workshop-2/src/html/title/test.html", htmlDoc);
+    fs.writeFileSync("/Users/junhongzhu/work/material-workshop-2/src/html/suit/test.html", htmlDoc);
 
 }

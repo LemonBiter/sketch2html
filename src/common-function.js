@@ -75,7 +75,7 @@ function getDataPositionInHTML(htmlEl){
 function getPadding(layer,paddingObj){
 
     let padding = {
-        top: Math.ceil(paddingObj.y - layer.y),
+        top: Math.ceil((paddingObj.y - layer.y)),
         right:Math.ceil((layer.width - paddingObj.width)-Math.ceil((paddingObj.x-layer.x))),
         bottom: Math.ceil((layer.height-paddingObj.height)-Math.ceil(paddingObj.y - layer.y)),
         left:Math.ceil((paddingObj.x-layer.x))
